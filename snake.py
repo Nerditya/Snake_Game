@@ -14,7 +14,7 @@ class Snake:
 
     def create_snake(self):
         for pos in Starting_positions:
-            seg = Turtle("turtle")
+            seg = Turtle("square")
             seg.color("white")
             seg.penup()
             seg.goto(pos)
@@ -54,9 +54,9 @@ class Snake:
             self.head.setheading(270)
 
     def increasesize(self):
-        seg = Turtle("turtle")
+        seg = Turtle("square")
         seg.color("white")
         seg.penup()
-        last = self.segments[len(self.segments)-1]
+        last = self.segments[len(self.segments) - 1]
         seg.goto(last.position())
         self.segments.append(seg)

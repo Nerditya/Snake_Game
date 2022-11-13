@@ -3,7 +3,8 @@ import time
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
-#hey there
+
+# hey there
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
@@ -36,13 +37,8 @@ while game_on:
         if seg == snake.head:
             pass
         else:
-            if snake.head.distance(seg)<10:
+            if snake.head.distance(seg) < 10:
                 game_on = False
-
-
-
-
-
 
 gam = Turtle()
 gam.penup()
